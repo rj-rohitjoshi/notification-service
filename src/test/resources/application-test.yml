@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: test-notification-service
+  mail:
+    host: localhost
+    port: 25
+
+notification:
+  email:
+    from: test@example.com
+  sms:
+    provider: test
+    account-sid: test
+    auth-token: test
+    from-number: +1234567890
+
+logging:
+  level:
+    com.ecommerce.notification: DEBUG

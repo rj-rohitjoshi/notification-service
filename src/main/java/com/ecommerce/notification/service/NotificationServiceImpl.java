@@ -3,6 +3,7 @@ package com.ecommerce.notification.service;
 import com.ecommerce.notification.dto.NotificationDto;
 import com.ecommerce.notification.dto.SendNotificationRequest;
 import com.ecommerce.notification.entity.Notification;
+import com.ecommerce.notification.exception.NotificationNotFoundException;
 import com.ecommerce.notification.repository.NotificationRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
